@@ -24,7 +24,7 @@ VBoxManage modifyvm ${NAME} \
     --bioslogodisplaytime 0 \
     --biosbootmenu disabled
 
-VBoxManage createhd --filename "${HDD}" --size 8192
+VBoxManage createhd --filename "${HDD}" --size 16384
 # Swap is recommended to be double the size of RAM.
 VBoxManage createhd --filename "${HDD_SWAP}" --size 1226
 
